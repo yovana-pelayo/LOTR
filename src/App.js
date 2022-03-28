@@ -4,17 +4,20 @@ import { Switch } from 'react-router-dom';
 import { React } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { Route } from 'react-router-dom';
-// import Header from '';
+import Header from './components/Header';
+import Characters from './views/Characters/Charatcers';
 function App() {
   return (
     <BrowserRouter>
-      {/* <Header /> */}
+      <Header />
       <div className="App">
         <Switch>
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/dogs">{/* <Characters /> */}</Route>
+          <Route path="/characters">
+            <Characters />
+          </Route>
         </Switch>
       </div>
     </BrowserRouter>

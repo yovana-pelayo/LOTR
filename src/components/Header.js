@@ -1,8 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import './Header.css';
-
 export default function Header() {
   return (
     <div className="header">
@@ -14,7 +12,7 @@ export default function Header() {
         </li>
         <li>
           <NavLink exact to="/characters">
-            Characters{' '}
+            Characters
           </NavLink>
         </li>
       </ul>
