@@ -38,6 +38,7 @@ export default function Characters() {
         {characters.map((character) => (
           <ul key={character.id}>
             <li>{character.name}</li>
+            <li>DOB: {character.birth}</li>
           </ul>
         ))}
       </div>

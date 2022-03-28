@@ -17,9 +17,14 @@ export default function Films() {
   return (
     <div>
       <h1>Lord Of The Rings</h1>
-      <div>
-        <img src={`${process.env.PUBLIC_URL}/films/${films}.jpeg`} />
-      </div>
+
+      {films.map((film) => (
+        <ul key={film.id}>
+          <li>{film.title}</li>
+          <li>{film.box_office_total}</li>
+          <li>{film.academy_award_nominations}</li>
+        </ul>
+      ))}
     </div>
   );
 }
