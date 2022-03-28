@@ -7,6 +7,7 @@ import { Route } from 'react-router-dom';
 import Header from './components/Header';
 import Characters from './views/Characters/Characters';
 import Films from './views/Films/Films';
+import Books from './views/Books/Books';
 function App() {
   return (
     <BrowserRouter>
@@ -21,6 +22,9 @@ function App() {
           </Route>
           <Route exact path="/films">
             <Films />
+          </Route>
+          <Route exact path="/books">
+            <Books />
           </Route>
         </Switch>
       </div>
