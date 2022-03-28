@@ -6,6 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import Header from './components/Header';
 import Characters from './views/Characters/Characters';
+import Films from './views/Films/Films';
 function App() {
   return (
     <BrowserRouter>
@@ -17,6 +18,9 @@ function App() {
           </Route>
           <Route exact path="/characters">
             <Characters />
+          </Route>
+          <Route exact path="/films">
+            <Films />
           </Route>
         </Switch>
       </div>
