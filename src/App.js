@@ -5,7 +5,7 @@ import { React } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import Header from './components/Header';
-import Characters from './views/Characters/Charatcers';
+import Characters from './views/Characters/Characters';
 function App() {
   return (
     <BrowserRouter>
@@ -15,7 +15,7 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/characters">
+          <Route exact path="/characters">
             <Characters />
           </Route>
         </Switch>

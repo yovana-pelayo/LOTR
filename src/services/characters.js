@@ -20,3 +20,7 @@ export async function fetchCharacters(race, query = '') {
   const data = await resp.json();
   return data;
 }
+/// query by name
+// state in dropdown
+
+// const [race, setRace] = useState('All');
